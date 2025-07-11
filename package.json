@@ -2,11 +2,11 @@
 	"author": "",
 	"description": "auto paser json string to obj ",
 	"license": "ISC",
-	"main": "readable.js",
-	"name": "jq2",
+	"main": "readable.js", 
+	"name": "jq3",
 	"version": "1.0.0",
 	"bin": {
-		"jq2": "./bin/jq2.js"
+		"jq3": "./bin/jq3.js"
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
