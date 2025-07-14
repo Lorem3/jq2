@@ -1,10 +1,10 @@
 {
 	"author": "",
-	"description": "auto paser json string to obj ",
+	"description": "Automatically parses JSON strings into objects for easier human readability.",
 	"license": "ISC",
-	"main": "readable.js", 
+	"main": "readable.js",
 	"name": "jq3",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"bin": {
 		"jq3": "./bin/jq3.js"
 	},
