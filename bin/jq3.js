@@ -48,6 +48,7 @@ stdin.on('end', () => {
   input = input.trim();
   let obj = JSON.parse(input)
   let obj2 = deepConvert(obj)
-  
+  /// remove undefined key 
+  obj2 = JSON.parse(JSON.stringify(obj2))  
   console.log(colorize(obj2))
 });
