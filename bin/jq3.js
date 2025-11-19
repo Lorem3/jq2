@@ -45,10 +45,17 @@ stdin.on('data', (chunk) => {
 
 stdin.on('end', () => {
   // 处理 piped 的完整输入字符串
-  input = input.trim();
-  let obj = JSON.parse(input)
-  let obj2 = deepConvert(obj)
+  
   /// remove undefined key 
-  obj2 = JSON.parse(JSON.stringify(obj2))  
-  console.log(colorize(obj2))
+  try {
+    let inputTrim = input.trim();
+    let obj = JSON.parse(inputTrim)
+    let obj2 = deepConvert(obj)
+    obj2 = JSON.parse(JSON.stringify(obj2))  
+    console.log(colorize(obj2))  
+  } catch (error) {
+    /// 非json 直接输出原始
+    console.log(input)
+  }
+  
 });

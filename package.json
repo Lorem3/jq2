@@ -4,7 +4,7 @@
 	"license": "ISC",
 	"main": "readable.js",
 	"name": "jq3",
-	"version": "1.0.3",
+	"version": "1.1.0",
 	"bin": {
 		"jq3": "./bin/jq3.js"
 	},
