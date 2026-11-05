@@ -2,6 +2,10 @@
 	"author": "",
 	"description": "Automatically parses JSON strings into objects for easier human readability.",
 	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Lorem3/jq2.git"
+	},
 	"main": "readable.js",
 	"name": "jq3",
 	"version": "1.2.0",
