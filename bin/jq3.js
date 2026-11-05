@@ -27,7 +27,8 @@ function colorize(value, indent = 0) {
   }
 
   // 基本类型
-  if (typeof value === 'string') return chalk.green(`"${value}"`);
+  // 用 JSON.stringify 保留 \n \t \" \\ 等转义，避免字符串里的换行被当成真换行
+  if (typeof value === 'string') return chalk.green(JSON.stringify(value));
   if (typeof value === 'number') return chalk.cyan(value.toString());
   if (typeof value === 'boolean') return chalk.magenta(value.toString());
   if (value === null) return chalk.gray('null');
